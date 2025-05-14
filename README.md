@@ -27,8 +27,6 @@ brew install openssl
 brew link openssl --force
 rvm install ruby-3.2.3 -C --with-openssl-dir=$(brew --prefix openssl@3)
 rvm --default use 3.2.3
-gem install eventmachine -- --with-openssl-dir=$(brew --prefix openssl@3)
-bundle install
 ```
 
 And then to run the documentation website locally:
